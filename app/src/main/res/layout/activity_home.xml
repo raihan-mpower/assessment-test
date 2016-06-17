@@ -77,5 +77,13 @@
             android:layout_marginTop="16dp"
             android:maxWidth="256dp"
             android:text="Newsfeed" />
+
+        <Button
+            android:id="@+id/buttonCamera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:maxWidth="256dp"
+            android:text="CameraCapture" />
     </LinearLayout>
 </ScrollView>

@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.iappdragon.recruitmenttest">
+
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
@@ -26,6 +27,10 @@
         <activity android:name=".ForthBugActivity" />
         <activity android:name=".FifthBugActivity" />
         <activity android:name=".CameraActivity" />
+        <activity
+            android:name=".WebService_Activity"
+            android:label="@string/title_activity_web_service_"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

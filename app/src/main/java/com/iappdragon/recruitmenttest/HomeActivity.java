@@ -23,6 +23,7 @@ public class HomeActivity extends Activity implements View.OnClickListener {
         ((Button) findViewById(R.id.buttonBug4)).setOnClickListener(this);
         ((Button) findViewById(R.id.buttonBug5)).setOnClickListener(this);
         ((Button) findViewById(R.id.buttonNewsfeed)).setOnClickListener(this);
+        ((Button) findViewById(R.id.buttonCamera)).setOnClickListener(this);
 
         initializeDatabase();
     }
@@ -60,8 +61,13 @@ public class HomeActivity extends Activity implements View.OnClickListener {
                 intent = new Intent(this, FifthBugActivity.class);
                 break;
             case R.id.buttonNewsfeed:
+//                intent = new Intent(this, CameraActivity.class);
+                intent = new Intent(this,WebService_Activity.class);
+                //implement your code
+                break;
+            case R.id.buttonCamera:
                 intent = new Intent(this, CameraActivity.class);
-
+//                intent = new Intent(this,WebService_Activity.class);
                 //implement your code
                 break;
             default:

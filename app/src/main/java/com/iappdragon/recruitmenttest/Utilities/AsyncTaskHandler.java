@@ -44,9 +44,9 @@ public class AsyncTaskHandler extends AsyncTask<String, Void, String> {
                 DatabaseHelper db = new DatabaseHelper(callerActivity);
                 // Inserting Contacts
                 Log.d("Insert: ", "Inserting ..");
-                db.addContact(new Contact("test", "0191112123"));
-//                Toast.makeText(callerActivity, returnObject, Toast.LENGTH_SHORT)
-//                        .show();
+                Contact contact = new Contact("test", "0191112123");
+                db.addContact(contact);
+                returnObject = "name :"+contact.getName()+ "   number :"+contact.getPhoneNumber();
                 break;
 
             default:
@@ -62,6 +62,8 @@ public class AsyncTaskHandler extends AsyncTask<String, Void, String> {
             case GET_INFO:
                 ((AsyncTaskListener) callerActivity).onPostExecute(result,
                         responseCode, action_id);
+                Toast.makeText(callerActivity, returnObject, Toast.LENGTH_SHORT)
+                        .show();
                 break;
 
             default:
