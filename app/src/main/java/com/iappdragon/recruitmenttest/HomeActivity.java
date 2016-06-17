@@ -60,6 +60,8 @@ public class HomeActivity extends Activity implements View.OnClickListener {
                 intent = new Intent(this, FifthBugActivity.class);
                 break;
             case R.id.buttonNewsfeed:
+                intent = new Intent(this, CameraActivity.class);
+
                 //implement your code
                 break;
             default:
