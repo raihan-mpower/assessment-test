@@ -45,8 +45,8 @@ public class AsyncTaskHandler extends AsyncTask<String, Void, String> {
                 // Inserting Contacts
                 Log.d("Insert: ", "Inserting ..");
                 db.addContact(new Contact("test", "0191112123"));
-                Toast.makeText(callerActivity, returnObject, Toast.LENGTH_SHORT)
-                        .show();
+//                Toast.makeText(callerActivity, returnObject, Toast.LENGTH_SHORT)
+//                        .show();
                 break;
 
             default:

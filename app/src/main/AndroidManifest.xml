@@ -20,6 +20,7 @@
         <activity android:name=".SecondBugActivity" />
         <activity android:name=".ThirdBugActivity" />
         <activity android:name=".ForthBugActivity" />
+        <activity android:name=".FifthBugActivity" />
         <activity android:name=".CameraActivity" />
     </application>
 

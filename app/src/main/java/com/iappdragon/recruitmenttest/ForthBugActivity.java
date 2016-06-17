@@ -1,15 +1,17 @@
 package com.iappdragon.recruitmenttest;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
 import com.iappdragon.recruitmenttest.Utilities.AsyncTaskHandler;
 import com.iappdragon.recruitmenttest.Utilities.AsyncTaskListener;
 
-public class ForthBugActivity extends AppCompatActivity implements AsyncTaskListener {
+public class ForthBugActivity extends Activity implements AsyncTaskListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forth_bug);
 
         AsyncTaskHandler asyncTaskHandler = new AsyncTaskHandler(this, AsyncTaskHandler.GET_INFO);
